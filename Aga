@@ -1,0 +1,152 @@
+/* Основной файл */
+@import url(https://shiki-theme.web.app/import/main.css);
+/* Шрифт Roboto */
+@import url(https://shiki-theme.web.app/import/font-roboto.css);
+/* Изменения профиля v1.0 */
+@import url(https://shiki-theme.web.app/import/profile-update.1.css);
+
+
+/* Настройки переменных темы */
+@media{:root {
+	/* Цвета текстов */
+  --color-text-primary: #e3e3e5;
+  --color-text-secondary: #babbbf;
+  --color-text-hint: #9c9da3;
+  --color-text-disabled: #7a7b82;
+  --color-overlay-text-hovered: rgba(227, 227, 229, 0.04);
+  --color-overlay-text-selected: rgba(227, 227, 229, 0.08);
+  --color-overlay-text-pressed: rgba(227, 227, 229, 0.12);
+	/* Цвет ссылок */
+  --color-link: #6192c3;
+  --color-link-hover: #ffbc40;
+  --color-link-active: #ffbc40;
+	/* Основной цвет */
+  --color-primary: #6192c3;
+  --color-text-on-primary: #101a1e;
+  --color-primary-reduced: #2276B9;
+  --color-primary-hovered: #86cbe9;
+  --color-primary-pressed: #77bfde;
+  --color-overlay-primary-hovered: rgba(124, 199, 231, 0.08);
+  --color-overlay-primary-selected: rgba(124, 199, 231, 0.12);
+  --color-overlay-primary-pressed: rgba(124, 199, 231, 0.16);
+	/* Акцентирующий цвет */
+  --color-accent: #ffbc40; 
+  --color-text-on-accent: #1f1b0f;
+  --color-accent-reduced: #c28342;
+  --color-accent-fade: #867955;
+  --color-overlay-accent-hovered: rgba(236, 207, 119, 0.08);
+  --color-overlay-accent-selected: rgba(236, 207, 119, 0.12);
+  --color-overlay-accent-pressed: rgba(236, 207, 119, 0.16);
+	/* Фоновые цвета */
+  --color-background: #282a36;
+  --color-background-translucent: rgba(40, 42, 54, 0.9);
+  --color-background-dialog: #333545;
+  --color-surface: #31333f;
+  --color-surface-hover: #41434e;
+  --color-surface-active: #4a4b56;
+  --color-border: #42444e;
+	/* Цвета верхнего меню */
+  --color-menu-background: #333545;
+  --color-menu-background-fade: rgba(51, 53, 69, 0.48);
+  --color-menu-text-primary: #e4e5e7;
+  --color-menu-text-disabled: #81828c;
+  --color-menu-icon: #cecfd2;
+  --color-menu-search: #4b4d5b;
+  --color-menu-search-fade: rgba(228, 229, 231, 0.12);
+  --color-menu-background-hover: #434554;
+  --color-menu-background-active: #4b4d5b;
+	/* Цвета панелек запланировано/смотрю/брошено и тд */
+  --color-planned: #595a5a; /* также отвечает за цвет не-добавленных тайтлов */
+  --color-onhold: #7B8084;
+  --color-watching: #4F91E8;
+  --color-rewatching: #3b5366;
+  --color-completed: #66BB6A;
+  --color-dropped: #EF5350;
+  
+	/* Процент комплита у неполученных франшизных ачивок */
+}.p-profiles-franchise .b-badge:before,
+ .p-profiles .c-franchises .b-badge:before {
+  display: block;
+
+   
+	/* Скрыть кнопку «сообщить об ошибке» слева внизу */
+}.marker-positioner .marker-text{
+  display: none;
+
+	
+    /* Cортировка уведомлений об эпизодах в 2 ряда */
+  }.b-comments { 
+  display: inline-block; 
+  }.b-generated_news {
+  width: 475px; 
+  display: inline-block; 
+  margin-right: 18px; 
+  border: 0;}
+  
+
+	/* «Подпись» стиля слева-снизу в профиле */
+.l-footer:before { 
+content: "Мой текущий CSS - https://pastebin.com/raw/Ew0MZNW6";
+}
+
+	/* Закрепление верхнего меню */ 
+}.l-top_menu-v2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}.l-page {
+  margin-top: 46px;
+}.b-comments-notifier {
+  top: 46px !important;
+ 
+
+  
+	/* Смена изображения персонажа в избранном */ 
+	/* Общие настройки */
+}.b-catalog_entry .cover .image-cutter {
+  background-size: cover;
+  background-position: top center;
+	/* Скрываем стандартные обложки */
+}.b-catalog_entry > a[href *= 'characters/141138-'] img,
+ .b-catalog_entry > a[href *= 'characters/21728-'] img {
+  opacity: 0; 
+	
+   /* Смена изображений */
+/* Kirukiru Amou */
+}.b-catalog_entry a[href *= 'characters/141138-'] .image-cutter {
+  background-image: url(https://cdn.discordapp.com/attachments/580476517545541668/680468533305802829/amou_kirukiru.png);
+/* Miyu Edelfelt */
+}.b-catalog_entry a[href *= 'characters/21728-'] .image-cutter {
+  background-image: url(http://fate-go.cirnopedia.org/icons/servant_card/2364.jpg);
+}
+
+
+	/* Аниме/Манга/Ранобэ рядом с пунктами истории */
+}.history-page a:before {
+  display: inline-block;
+  vertical-align: top;
+  width: 72px;
+}.history-page a[href ^= "/a"]:before {
+  content: '[Аниме] ';
+  color: #66BB6A;
+}.history-page a[href ^= "/m"]:before {
+  content: '[Манга] ';
+  color: #FFBC40;
+}.history-page a[href ^= "/r"]:before {
+  content: '[Ранобэ] ';
+  color: #F0615E;
+}[data-locale="en"] .history-page a[href ^= "/a"]:before {
+  content: '[Anime] ';
+}[data-locale="en"] .history-page a[href ^= "/m"]:before {
+  content: '[Manga] ';
+}[data-locale="en"] .history-page a[href ^= "/r"]:before {
+  content: '[Ranobe] ';
+
+	/* Использованные скрипты: */
+	/* 1) Отдельный рейтинг из Шики и MAL'a - https://shikimori.one/forum/site/218886-shiki-reyting-introdyusing-nyu-kul-ficha 
+	2) Подгрузка 100 коментариев, вместо 20 - https://greasyfork.org/ru/scripts/383088-shikimori-comments-loader
+	3) «Онлайн-просмотр» на шики - https://greasyfork.org/en/scripts/387070-shikimori-live-v2 */
+  
+  
+  }}
