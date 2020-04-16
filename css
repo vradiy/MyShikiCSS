@@ -1,0 +1,45 @@
+/* jura-300 - latin */
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Jura Light'), local('Jura-Light'),
+       url('../fonts/jura-v10-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/jura-v10-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* jura-regular - latin */
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Jura Regular'), local('Jura-Regular'),
+       url('../fonts/jura-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/jura-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* jura-500 - latin */
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Jura Medium'), local('Jura-Medium'),
+       url('../fonts/jura-v10-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/jura-v10-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* jura-600 - latin */
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Jura SemiBold'), local('Jura-SemiBold'),
+       url('../fonts/jura-v10-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/jura-v10-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* jura-700 - latin */
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Jura Bold'), local('Jura-Bold'),
+       url('../fonts/jura-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/jura-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
